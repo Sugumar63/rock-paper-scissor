@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game | Rock Paper Scissor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <h1>Rock | Paper | Scissor</h1>
+
+        <h3>Choose and Play!🎮</h3>
+
+        <div id="choices">
+            <button onclick="Game('Rock')">🪨</button>
+            <button onclick="Game('Paper')">📜</button>
+            <button onclick="Game('Scissor')">✂️</button>
+        </div>
+
+        <div id="player-choice">PLAYER: </div>
+        <div id="computer-choice">COMPUTER: </div>
+        <div id="resultDisplay">RESULT</div>
+
+        <audio src="./Win.wav" id="win-sound"></audio>
+        <audio src="./Tie.wav" id="tie-sound"></audio>
+        <audio src="./Lose.wav" id="lose-sound"></audio>
+
+        <div id="scoreboard">
+            <h3>Score!🥳</h3>
+            <p>PLAYER SCORE: <span id="player-score">0</span></p>
+            <p>COMPUTER SCORE: <span id="computer-score">0</span></p>
+        </div>
+        <p class="footer">Copyright &copy; 2024, Created by Sugumar.</p>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right bottom, rgb(0, 31, 131), rgb(192, 0, 189));
+
+}
+
+.wrapper {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+    border-radius: 2em;
+    padding: 1.5em;
+}
+
+h1 {
+    font-size: 3em;
+    text-align: center;
+}
+
+h3 {
+    color: rgb(109, 153, 255);
+    font-size: 2em;
+}
+
+#choices {
+    display: flex;
+    gap: 1em;
+}
+
+#choices button {
+    padding: 0.5em 1.2em;
+    border-radius: 0.5em;
+    font-size: 3em;
+    border: 3px solid;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+
+}
+
+#choices button:hover {
+    background-color: white;
+    border: 3px solid rgb(109, 153, 255);
+    transform: scale(1.05);
+}
+
+#player-choice,
+#computer-choice {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+#resultDisplay {
+    font-size: 3.5em;
+    border: 3px solid rgb(109, 153, 255);
+    border-radius: 0.5em;
+    padding: 10px 50px;
+}
+
+
+#scoreboard {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+#scoreboard h3 {
+    margin-bottom: 1rem;
+    color: rgb(109, 153, 255);
+}
+
+#scoreboard p {
+    margin: 0.5rem 0;
+    font-weight: bold;
+}
+
+.footer {
+    text-align: center;
+}
+
+
+
+
+
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5em;
+    }
+
+    h3 {
+        font-size: 1.5em;
+    }
+
+    #choices {
+        flex-direction: column;
+        gap: 0.5em;
+    }
+
+    #choices button {
+        font-size: 2.5em;
+        padding: 0.4em 1em;
+    }
+
+    #player-choice,
+    #computer-choice {
+        font-size: 1.5em;
+    }
+
+    #resultDisplay {
+        font-size: 3em;
+        padding: 10px 30px;
+    }
+
+    .wrapper {
+        padding: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    h3 {
+        font-size: 1.2em;
+    }
+
+    #choices button {
+        font-size: 2em;
+        padding: 0.3em 0.8em;
+    }
+
+    #player-choice,
+    #computer-choice {
+        font-size: 1.2em;
+    }
+
+    #resultDisplay {
+        font-size: 2.5em;
+        padding: 10px 20px;
+    }
+
+    .wrapper {
+        padding: 0.8em;
+        gap: 1.5rem;
+    }
+}
